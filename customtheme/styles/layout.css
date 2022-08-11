@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Global layout styles
+   ========================================================================== */
+
 body { 
     margin: 0;
 }
@@ -13,12 +17,28 @@ header {
 	height: 100%;
 }
 
+/* ==========================================================================
+   Section styles
+   ========================================================================== */
+
 .section {
 	padding-left: var(--section-padding);
 	padding-right: var(--section-padding);
+	padding-top: 32px;
+	padding-bottom: 32px;
+	box-sizing: border-box;
 }
 
 .section.dark {
 	background-color: var(--secondary-background-color);
-	min-height: 320px;
+	height: auto;
+	color: white;
+}
+
+/* ==========================================================================
+   Component styles
+   ========================================================================== */
+
+.intro {
+	text-align: center;
 }
