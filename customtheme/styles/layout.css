@@ -1,0 +1,23 @@
+body { 
+    margin: 0;
+}
+
+header {
+	width: 100%;
+	min-height: 400px;
+}
+
+#wrapper {
+	width: 100%;
+}
+.section {
+	padding-left: var(--section-padding);
+	padding-right: var(--section-padding);
+	min-height: 320px;
+	border: 1px solid var(--border-color);
+}
+
+.section.full-width {
+	padding: 0;
+	background-color: var(--background-color);
+}

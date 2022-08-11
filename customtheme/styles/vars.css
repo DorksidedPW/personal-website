@@ -1,28 +1,66 @@
-:root{
-
-/********* COLOR VARS ********/
+:root {
+/* ==========================================================================
+   COLOR VARIABLES
+   ========================================================================== */
 
 /* Primary color vars */
-    primary1Color: red;
-    primary2Color: green;
-    primary3Color: blue;
+    --primary1-color: red;
+    --primary2-color: green;
+    --primary3-color: blue;
 
     /* Secondary color vars */
-    secondary1Color: yellow;
-    secondary2Color: pink;
-    secondary3Color: purple;
+    --secondary1-color: yellow;
+    --secondary2-color: pink;
+    --secondary3-color: purple;
 
     /*Layout color vars*/
-    borderColor: #eaeaea;
-    backgroundColor: #f5f5f5;
+    --border-color: #eaeaea;
+    --background-color: #f5f5f5;
 
     /* Text color vars */
-    primaryTextColor: #4e4e4e;
-    secondaryTextColor: #7d7d7d;    
+    --primary-text-color: #4e4e4e;
+    --secondary-text-color: #7d7d7d;    
+
+/* ==========================================================================
+   Typography variables
+   ========================================================================== */
 
 /********* TYPOGRAPHY VARS ********/
+    /* Color vars */
+    --primary-font-family: 'Roboto';
+    --secondary-font-family: 'Raleway';
 
+    /* Size vars */
+    --primary-font-size: 1rem;
+    --secondary-font-size: 0.8rem;
 
+/* ==========================================================================
+   Layout variables
+   ========================================================================== */
+    --section-padding: 15%;
 }
+/* ==========================================================================
+   Dark theme variables
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+    /********* COLOR VARS ********/
+    :root {
+    /* Primary color vars */
+        --primary1-color: red;
+        --primary2-color: green;
+        --primary3-color: blue;
 
+        /* Secondary color vars */
+        --secondary1-color: yellow;
+        --secondary2-color: pink;
+        --secondary3-color: purple;
 
+        /*Layout color vars*/
+        --border-color: pink;
+        --background-color: purple;
+
+        /* Text color vars */
+        --primary-text-color: white;
+        --secondary-text-color:#eaeaea;   
+    }
+}
