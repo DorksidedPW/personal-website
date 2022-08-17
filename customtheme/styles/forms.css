@@ -1,0 +1,31 @@
+.form-group {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+form {
+    gap: 8px;
+    width: 100%;
+}
+
+label {
+    font-family: var(--primary-font-family);
+}
+
+small {
+    font-family: var(--secondary-font-family);
+}
+
+input,
+select,
+textarea {
+    background-color: white;
+    padding: 8px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-border-color);
+}
