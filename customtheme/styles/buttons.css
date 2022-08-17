@@ -1,0 +1,39 @@
+.button-container {
+    display: flex;
+    gap: 4px;
+}
+
+button,
+.button {
+    background-color: var(--primary1-color);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--primary2-color);
+    transition:cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:active,
+.button:active {
+    background-color: var(--primary3-color);
+    transition:cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.icon-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button .label {
+    text-align: center;
+}
