@@ -19,9 +19,13 @@
     --tertiary3-color: #F4BA4E;
 
     /*Layout color vars*/
-    --border-color: #eaeaea;
     --background-color: #f5f5f5;
     --secondary-background-color: #324759;
+
+    /* Borders */
+    --primary-border-color: #eaeaea;
+    --secondary-border-color: #c6c6c6;
+    --dark-border-color: #1D1D1F;
 
     /* Text color vars */
     --primary-text-color: #4e4e4e;
@@ -40,11 +44,33 @@
     --primary-font-size: 1rem;
     --secondary-font-size: 0.8rem;
 
-/* ==========================================================================
-   Layout variables
-   ========================================================================== */
-    --section-padding: 25%;
+    --section-padding: 15%;
 }
+
+@media (min-width: 1600px) {
+    :root {
+        --section-padding: 20%;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1600px) {
+    :root {
+        --section-padding: 15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1367px) {
+    :root {
+        --section-padding: 5%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    :root {
+        --section-padding: 2%;
+    }
+}
+
 /* ==========================================================================
    Dark theme variables
    ========================================================================== */

@@ -1,3 +1,12 @@
 @import url(styles/vars.css);
-@import url(styles/article.css);
+@import url(styles/global.css);
 @import url(styles/layout.css);
+/* ==========================================================================
+   COMPONENT IMPORTS
+   ========================================================================== */
+/*BUTTONS */
+@import url(styles/buttons.css);
+/*ARTICLES */
+@import url(styles/article.css);
+/*FORMS */
+@import url(styles/forms.css);
