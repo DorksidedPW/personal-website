@@ -1,0 +1,26 @@
+:root {
+    font-size: var(--primary-font-size);
+}
+
+h1,h2,h3,h4,h5,h5 {
+    font-family: var(--secondary-font-family);
+    color: var(--primary1-color);
+    font-weight: 900;
+    margin: 0;
+}
+
+p {
+    font-family: var(--primary-font-family);
+    font-size: 0.9rem;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

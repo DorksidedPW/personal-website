@@ -14,4 +14,10 @@
         <?php wp_head(); ?>
 	</head>
 	<body>
-        <header></header>   
+        <header>
+            <div id='navigation-container' class='section-padding'>
+                <nav>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                </nav>
+            </div>
+        </header>

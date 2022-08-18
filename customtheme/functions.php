@@ -1,6 +1,7 @@
 <?php	
     define("THEME_DIR", get_template_directory_uri());
-    
+
+    //Enqueue custom style.css
     function enqueue_styles() {
      
         /** REGISTER css/screen.cs **/
@@ -9,14 +10,13 @@
              
     }
     add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+    //Disable woocommerce styles
     add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
-    function admin_bar(){
-
-        if(is_user_logged_in()){
-          add_filter( 'show_admin_bar', '__return_true' , 1000 );
-        }
-      }
-      add_action('init', 'admin_bar' );
+    //Add main menu
+    function main_menu() {
+      register_nav_menu('header-menu',__( 'Main Menu' ));
+    }
+    add_action( 'init', 'main_menu' );
 
 ?>
