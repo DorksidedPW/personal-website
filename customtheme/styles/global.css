@@ -2,6 +2,10 @@
     font-size: var(--primary-font-size);
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 h1,h2,h3,h4,h5,h5 {
     font-family: var(--secondary-font-family);
     color: var(--primary1-color);

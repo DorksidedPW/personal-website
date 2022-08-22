@@ -14,10 +14,37 @@
         <?php wp_head(); ?>
 	</head>
 	<body>
-        <header>
-            <div id='navigation-container' class='section-padding'>
-                <nav>
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                </nav>
+		<div class="parallax">
+			<div id='navigation-container' class='section-padding'>
+            	<div id="logo-container">
+					<a id='logo' href="">SANDBOX</a>
+					<span>User interface | User interaction design</span>
+				</div>
+				<nav>
+                    <ul>
+						<li>
+							<a href='#example'>ScrollTo</a>
+						</li>
+						<li>
+							<a href='#contact'>Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class='button-container'>
+					<a class='button header-button'><span class="mdi mdi-whatsapp"></a>
+					<a class='button header-button'><span class="mdi mdi-cellphone"></a>
+					<a class='button header-button'><span class="mdi mdi-home"></a>
+				</div>
             </div>
-        </header>
+            <div id='banner-group' class="parallax-group">
+                <div id='banner' class="layer layer--back"></div>
+                <div id='banner-content' class="layer layer--base section-padding">
+                    <div class='title-container'>
+						<h1>User interface |<br> User interaction design</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a ex non 
+							is venenatis lacus. Sed semper nisl nisi, ac hendrerit mauris iaculis et. Curabitur erat eros, tempor at purus at, tristique varius erat.
+						</p>
+					</div>
+                </div>
+            </div>
