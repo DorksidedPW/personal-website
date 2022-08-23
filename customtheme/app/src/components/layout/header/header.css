@@ -1,0 +1,24 @@
+#header {
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  gap: 16px;
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+  background-color: var(--header-background-color);
+  box-sizing: border-box;
+  color: var(--header-text-color);
+  align-items: center;
+}
+
+#logo-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#logo {
+  color: #c6c6c6;
+  font-family: var(--primary-font-family);
+  font-size: 24px;
+}

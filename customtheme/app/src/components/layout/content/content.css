@@ -1,0 +1,5 @@
+#content {
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+  min-height: 600px;
+}

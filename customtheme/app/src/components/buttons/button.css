@@ -1,0 +1,49 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-base {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button-base:hover {
+  transition: 0.1s ease-in-out;
+}
+
+.button-base:focus {
+  transition: 0.2s ease-in-out;
+}
+
+.icon-button {
+  border: 2px solid var(--button-background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  fill: white;
+}
+
+.icon-button:hover {
+  border-color: var(--button-hover-color);
+  fill: var(--button-hover-color);
+  color: var(--button-hover-color);
+}
+
+.icon-button:focus {
+  border-color: var(--button-focus-color);
+  fill: var(--button-focus-color);
+  color: var(--button-focus-color);
+}
+
+.icon-button:focus-visible {
+  outline: var(--button-hover-color);
+  fill: var(--button-hover-color);
+  color: var(--button-hover-color);
+
+}
