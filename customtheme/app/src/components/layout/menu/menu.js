@@ -9,6 +9,7 @@ const Menu = (props) => {
     <ul>
       <li><a href='#UIUX'>UI/UX</a></li>
       <li className='link-alpha'><Link to={`/app/`}>SANDBOX</Link></li>
+      <li><a className='featured' href='#contact'>Neem contact op</a></li>
     </ul>
   </nav>)
 }

@@ -1,0 +1,106 @@
+.posts-section {
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+  background: linear-gradient(to right, #eef2f3, #F5F5F5);
+  padding-top: 64px;
+  position: relative;
+  z-index: 999;
+  padding-bottom: 64px;
+}
+
+.posts-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* .post:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} */
+
+.image-container {
+  width: 100%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  height: 240px;
+  background-color: white;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  transition: all .2s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.image-container:hover {
+  background-size: cover;
+  transition: all .2s ease-in-out;
+}
+
+.image-container:after {
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  content: '';
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  top: 0;
+  height: 240px;
+}
+
+.post-title-container {
+  margin-top: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 999;
+  color: white;
+}
+
+.post-title-container h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--primary-secondary-family); 
+}
+
+.content-container {
+  box-sizing: border-box;
+  color: var(--primary-text-color) ;
+  margin-top: 16px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.post-cat {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--secondary3-color);
+}
+
+.content-container p {
+  font-size: 13px;
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font-family);
+}
+
+.content-container a {
+  margin-top: auto;
+  color: var(--secondary2-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--primary-secondary-family); 
+}
+
+.content-container a:hover {
+  color: var(--primary1-color);
+}

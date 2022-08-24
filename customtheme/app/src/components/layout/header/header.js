@@ -12,13 +12,10 @@ const Header = (props) => {
     <>
       <div id='header'>
         <div id='logo-container'>
-            <Link id='logo' to={'/'}>VITAMINE<b style={{color: '#F47A7A'}}>BYTES</b></Link>
+          <Link id='logo' to={'/'}>VITAMINE<b style={{color: '#F47A7A'}}>BYTES</b></Link>
           <span>User interface | User interaction design</span>
         </div>
         <Menu />
-        <div className='header button-container'>
-          <IconButton icon={mdiCellphone} />
-        </div>
       </div>
     </>
   )

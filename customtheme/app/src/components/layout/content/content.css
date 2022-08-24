@@ -1,5 +1,14 @@
 #content {
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
-  min-height: 600px;
+  padding-top: var(--top-bottom-padding);
+  padding-bottom: var(--top-bottom-padding);
+  position: relative;
+  z-index: 999;
+  background-color: white;
+}
+
+#content p {
+  color: var(--secondary-text-color);
+  font-weight: 400;
 }

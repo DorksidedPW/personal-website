@@ -26,6 +26,10 @@
   font-size: 24px;
 }
 
+#logo:hover::after {
+  border: none;
+}
+
 #banner {
   background-color: var(--header-background-color);
   display: flex;

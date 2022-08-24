@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Header from '../header/header';
 import Content from '../content/content';
+import Contact from '../contact/contact';
 import Posts from '../posts/posts';
 import './container.css';
 import '../../../styles/parallax.css'
@@ -30,6 +31,7 @@ const Container = (props) => {
         </div>
         <Content />
         <Posts />
+        <Contact />
       </div>
 	);
 }
