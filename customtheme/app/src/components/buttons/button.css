@@ -5,10 +5,14 @@
 }
 
 .button-base {
-  width: 32px;
+  width: auto;
   height: 32px;
+  border-radius: 4px;
+  text-align: center;
   cursor: pointer;
+  line-height: 32px;
   background-color: transparent;
+  padding: 4px;
 }
 
 .button-base:hover {
@@ -19,6 +23,16 @@
   transition: 0.2s ease-in-out;
 }
 
+
+/* --- CALL TO ACTION BUTTON ---*/
+.call-to-action {
+  background-color: var(--tertiary2-color);
+}
+
+
+/* --- PRIMARY BUTTON ---*/
+
+/* --- ICONBUTTON ---*/
 .icon-button {
   border: 2px solid var(--button-background-color);
   border-radius: 50%;
@@ -26,6 +40,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  width: 32px;
   fill: white;
 }
 

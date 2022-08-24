@@ -1,10 +1,14 @@
+:root {
+  font-size: 13px;
+}
+
 li {
   list-style: none;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-a:visited {
-  color: initial;
-}
+
+a:visited {}

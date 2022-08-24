@@ -9,18 +9,18 @@ import './header.css';
 
 const Header = (props) => {
   return(
-    <div id='header'>
-      <div id='logo-container'>
-          <Link id='logo' to={'/'}>SANDBOX</Link>
-        <span>User interface | User interaction design</span>
+    <>
+      <div id='header'>
+        <div id='logo-container'>
+            <Link id='logo' to={'/'}>VITAMINE<b style={{color: '#F47A7A'}}>BYTES</b></Link>
+          <span>User interface | User interaction design</span>
+        </div>
+        <Menu />
+        <div className='header button-container'>
+          <IconButton icon={mdiCellphone} />
+        </div>
       </div>
-      <Menu />
-      <div className='header button-container'>
-        <IconButton icon={mdiCellphone} />
-        <IconButton icon={mdiWhatsapp} />
-        <IconButton icon={mdiAccount} />
-      </div>
-    </div>
+    </>
   )
 }
 

@@ -6,20 +6,18 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Container from './components/layout/container/container'
-import Header from './components/layout/header/header'
+import Container from './components/layout/container/container';
+import Header from './components/layout/header/header';
 
 function App() {
 
   return (
     <div className="App">
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Container />} />
-            <Route path="/app" element={<Container />} />
-          </Routes>  
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Container />} />
+        </Routes>  
+      </BrowserRouter>
     </div>
   );
 }

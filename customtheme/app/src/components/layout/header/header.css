@@ -7,6 +7,9 @@
   padding-right: var(--section-padding);
   background-color: var(--header-background-color);
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   color: var(--header-text-color);
   align-items: center;
 }
@@ -21,4 +24,36 @@
   color: #c6c6c6;
   font-family: var(--primary-font-family);
   font-size: 24px;
+}
+
+#banner {
+  background-color: var(--header-background-color);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  transform: scale(3);
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background-image: url(https://www.paulwassen.nl/wp-content/uploads/2022/08/snow-g12c3cce38_1920-1024x683.jpg); */
+}
+
+#banner-content {
+  height: 100%;
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+  color: #c6c6c6;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+#banner-content h1 {
+  line-height: 24px;
+}
+
+#banner-group {
+  height: 420px;
 }
