@@ -17,9 +17,49 @@
 #contact-container {
   gap: 64px;
   display: flex;
+  justify-content: center;
 }
 
 .contact-intro {
   display: flex;
   gap: 8px;
+}
+
+#contact-form .title-container {
+  width: 40%;
+}
+
+#contact-form .form-container {
+  width: 60%;
+}
+
+@media (min-width: 768px) and (max-width: 1367px) {
+  .posts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact-form .title-container {
+    width: 100%;
+  }
+
+  #contact-form .form-container {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #contact-container {
+    flex-direction: column;
+  }
+
+  #contact-form .title-container {
+    width: 100%;
+  }
+
+  #contact-form .form-container {
+    width: 100%;
+  }
+
+
 }
