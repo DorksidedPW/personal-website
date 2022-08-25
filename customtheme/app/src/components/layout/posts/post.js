@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Post = (props) => {
   const {post} = props;
@@ -6,29 +7,29 @@ const Post = (props) => {
   const excerpt = post.excerpt.rendered;
   const imgSrc = post.featured_media_src_url;
   const link = post.link;
+  const linkTo = `post${post.id}`;
 
   return(
     <div className='post'>
-      <div
-        className='image-container'
-        style={{
-          backgroundImage: `url(${imgSrc})`,
-        }}
-      >
-        <div className='post-title-container '>
-          <span className='post-cat'>UI/UX</span>
-          <h3 dangerouslySetInnerHTML={{__html: title}}></h3>
+      <Link to={linkTo}>
+        <div
+          className='image-container'
+          style={{
+            backgroundImage: `url(${imgSrc})`,
+          }}
+        >
+          <div className='post-title-container '>
+            <span className='post-cat'>UI/UX</span>
+            <h3 dangerouslySetInnerHTML={{__html: title}}></h3>
+          </div>
         </div>
-      </div>
+      </Link>
       <div className='content-container'>
         <span dangerouslySetInnerHTML={{__html: excerpt}}></span>
-        <a  href={link}>Meer informatie</a>
+        <li><Link to={linkTo}>Lees meer</Link></li>
       </div>
     </div>
   );
 }
 
 export default Post;
-
-// <h1 dangerouslySetInnerHTML={{__html: title}}></h1> 
-// <div dangerouslySetInnerHTML={{__html: content}}></div>

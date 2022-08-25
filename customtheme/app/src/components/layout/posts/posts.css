@@ -66,7 +66,7 @@
 .post-title-container h3 {
   margin: 0;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: var(--primary-secondary-family); 
 }
@@ -103,4 +103,18 @@
 
 .content-container a:hover {
   color: var(--primary1-color);
+}
+
+@media (min-width: 768px) and (max-width: 1367px) {
+  .posts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .posts-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
