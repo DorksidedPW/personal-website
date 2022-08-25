@@ -11,23 +11,50 @@ label {
   text-transform: uppercase;
 }
 
-.textfield, .textarea, .selectfield {
+.textfield,
+.textarea,
+.selectfield {
   border: none;
+  border-radius: 4px;
+  background-color: white;
+  min-height: 40px;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: var(--secondary-font-family);
+  box-shadow: inset -2px 2px 3px -1px #574e4e;
   border-bottom: 2px solid #F47A7A;
+}
+
+.textfield::placeholder,
+.textarea::placeholder,
+.selectfield::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4e4e4e;
 }
 
 .textfield:focus,
 .textarea:focus,
 .selectfield:focus {
-  border-bottom: 4px solid #F47A7A;
+  border-bottom: 2px solid #F47A7A;
+  outline: 1px solid #F47A7A;
   transition: 0.1s ease-in-out;
 }
 
-.textfield {
-  height: 32px;
+.textfield,
+.selectfield {
   width: 100%;
   padding: 4px;
   box-sizing: border-box;
+}
+
+.selectfield {
+  padding-top: 12px;
+}
+
+.option {
+  font-size: 16px;
+  font-family: var(--secondary-font-family);
 }
 
 .textarea {
