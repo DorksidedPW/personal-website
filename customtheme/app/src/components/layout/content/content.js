@@ -16,7 +16,7 @@ const Content = (props) => {
   }, [])
 
   return(
-    <div id='content' > 
+    <div className='content' > 
       <h1 dangerouslySetInnerHTML={{__html: title}}></h1> 
       <div dangerouslySetInnerHTML={{__html: content}}></div>
     </div>
