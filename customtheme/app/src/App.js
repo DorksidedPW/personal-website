@@ -5,17 +5,18 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  useParams,
 } from "react-router-dom";
 import Container from './components/layout/container/container';
-import Header from './components/layout/header/header';
+import PageContainer from './components/layout/container/pagecontainer';
 
 function App() {
-
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Container />} />
+          <Route path="/post:id" element={<PageContainer id={'/:id'}/>} />
         </Routes>  
       </BrowserRouter>
     </div>

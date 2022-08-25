@@ -2,10 +2,10 @@
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
   background: linear-gradient(to right, #eef2f3, #F5F5F5);
-  padding-top: 64px;
+  padding-top: var(--top-bottom-padding);
   position: relative;
   z-index: 999;
-  padding-bottom: 64px;
+  padding-bottom: var(--top-bottom-padding);
 }
 
 .posts-container {
