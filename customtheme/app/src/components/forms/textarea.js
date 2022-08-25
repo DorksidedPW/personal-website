@@ -4,7 +4,7 @@ import './formstyle.css';
 const Textarea = (props) => {
   return(
     <form>
-      <label className='label' for={props.id}>{props.label}</label>
+      <label className='label' htmlFor={props.id}>{props.label}</label>
       <textarea
         id={props.id}
         placeholder={props.placeholder}

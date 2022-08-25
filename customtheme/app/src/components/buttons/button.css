@@ -53,6 +53,8 @@
 .primary:focus {
   background-color: var(--secondary3-color);
   border-color: var(--secondary2-color);
+  outline: 2px solid #F4BA4E;
+  
 }
 .primary:hover {
   background-color: var(--secondary2-color);

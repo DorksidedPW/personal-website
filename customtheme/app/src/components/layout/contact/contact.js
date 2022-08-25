@@ -28,7 +28,7 @@ const Contact = (props) => {
   return(
     <div id='contact-form'>
       <h2 className='subtitle' id='contact'>
-        Categorie subtitle style
+        Neem contact op
       </h2>
       <div id='contact-container'>
         <div className='form-container'>

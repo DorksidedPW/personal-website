@@ -34,14 +34,23 @@
   cursor: pointer;
   position: relative;
   transition: all .2s ease-in-out;
-  background-size: cover;
+  background-size: 150%;
   background-position: center;
   display: flex;
 }
 
 .image-container:hover {
   background-size: cover;
+  background-size: 130%;
   transition: all .2s ease-in-out;
+}
+
+.post a:hover:after {
+  border: none;
+}
+
+.post a:focus {
+  outline: 2px solid #F4BA4E;
 }
 
 .image-container:after {

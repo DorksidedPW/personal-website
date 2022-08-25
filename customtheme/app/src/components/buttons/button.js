@@ -10,7 +10,7 @@ const Button = (props) => {
     <button
       onClick={buttonClick}
       className='button-base primary'
-      tabindex="0"
+      tabIndex="0"
     >
       {label}
     </button>

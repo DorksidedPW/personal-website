@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import {
-  BrowserRouter,
+  BrowserRouter ,
   Routes,
   Route,
 } from "react-router-dom";
