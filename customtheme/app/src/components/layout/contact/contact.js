@@ -3,8 +3,6 @@ import Textfield from '../../forms/textfield'
 import Textarea from '../../forms/textarea'
 import Selectfield from '../../forms/selectfield'
 import Button from '../../buttons/button'
-import Icon from '@mdi/react';
-import { mdiCoffee } from '@mdi/js';
 import './contact.css';
 
 const Contact = (props) => {
