@@ -1,7 +1,5 @@
 import React from 'react';
 import Menu from '../menu/menu';
-import IconButton from '../../buttons/iconbutton';
-import { mdiAccount, mdiWhatsapp, mdiCellphone } from '@mdi/js'
 import {
   Link
 } from "react-router-dom";
