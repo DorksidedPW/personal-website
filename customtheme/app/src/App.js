@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import Container from './components/layout/container/container';
+import Viewer from './components/viewerapp/viewer'
 import PageContainer from './components/layout/container/pagecontainer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Container />} />
+          <Route path="/app" element={<Viewer />} />
           <Route path="/post:id" element={<PageContainer id={'/:id'}/>} />
         </Routes>  
       </BrowserRouter>
