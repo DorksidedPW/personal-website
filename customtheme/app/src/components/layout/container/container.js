@@ -3,6 +3,11 @@ import Header from '../header/header';
 import Content from '../content/content';
 import Contact from '../contact/contact';
 import Posts from '../posts/posts';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './container.css';
 import '../../../styles/parallax.css'
 
